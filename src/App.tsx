@@ -1,7 +1,13 @@
+import BigBlock from './components/BigBlock';
 import ListGroup from './components/ListGroup';
-
+import NavBar from './components/NavBar';
+import ProgressBar from './components/ProgressBar';
 function App(){
-  return <div><ListGroup /></div>
+  return <div> <NavBar />
+    {/* <ListGroup /> */}
+    <BigBlock />
+    {/* <ProgressBar /> */}
+    </div>
 }
 export default App;
 // import { useState } from 'react'
