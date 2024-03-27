@@ -1,12 +1,13 @@
 import BigBlock from './components/BigBlock';
-import ListGroup from './components/ListGroup';
+
 import LoadingSpinner from './components/LoadingSpinner';
 import NavBar from './components/NavBar';
-import ProgressBar from './components/ProgressBar';
+
 import SubmitButton from './components/SubmitButton';
 import Canvas from './components/Canvas';
-import SingleFileUploader from './components/fileUpload';
+import SingleFileUploader from   './components/fileUpload';
 function App(){
+  
   return <div> <NavBar />
     {/* <ListGroup /> */}
     <BigBlock />
