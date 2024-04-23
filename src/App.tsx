@@ -2,7 +2,7 @@ import BigBlock from './components/BigBlock';
 
 import LoadingSpinner from './components/LoadingSpinner';
 import NavBar from './components/NavBar';
-
+import ResultText from './components/ResultText';
 import SubmitButton from './components/SubmitButton';
 import Canvas from './components/Canvas';
 import SingleFileUploader from   './components/fileUpload';
@@ -15,6 +15,7 @@ function App(){
     <Canvas />
     <SingleFileUploader />
     <SubmitButton />
+    <ResultText />
     <LoadingSpinner/>
     </div>
 }

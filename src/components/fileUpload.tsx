@@ -9,9 +9,7 @@ const SingleFileUploader = () => {
     }
   };
 
-  const handleUpload = async () => {
-    // We will fill this out later
-  };
+
 
   return (
     <>
@@ -32,7 +30,7 @@ const SingleFileUploader = () => {
         </section>
       )} */}
 
-      {file && <button onClick={handleUpload}>Upload a file</button>}
+      
     </>
   );
 };
