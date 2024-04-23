@@ -74,6 +74,7 @@ export async function RunMain(test=true) {
     RunModel(imgData.data, 224, 224);
   }
   img.src = URL.createObjectURL(imgFile);
+  return "XMLDocument";
 }
 
 async function RunModel(data, width, height) {
