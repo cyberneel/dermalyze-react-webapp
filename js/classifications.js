@@ -7,4 +7,4 @@ var skinClassifications = {
     '2': 'melanoma or mole',
     '3': 'psoriasis'
 };
-sourceMappingURL=imagenet.js.map
+// sourceMappingURL=imagenet.js.map

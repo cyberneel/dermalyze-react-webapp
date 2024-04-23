@@ -10,9 +10,9 @@ const Canvas = ({ width, height }: CanvasProps) => {
     if (canvasRef.current) {
         canvasCtxRef.current = canvasRef.current.getContext('2d');
         let ctx = canvasCtxRef.current; // Assigning to a temp variable
-        ctx!.beginPath(); // Note the Non Null Assertion
-        ctx!.arc(95, 50, 40, 0, 2 * Math.PI);
-        ctx!.stroke();
+        // ctx!.beginPath(); // Note the Non Null Assertion
+        // ctx!.arc(95, 50, 40, 0, 2 * Math.PI);
+        // ctx!.stroke();
       }
   }, []);
 
