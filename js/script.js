@@ -64,12 +64,12 @@ export async function RunMain(test=true) {
   var img = new Image;
   const canvas = document.getElementById("canvas");
   const ctx = canvas.getContext('2d', { willReadFrequently: true });
-  ctx.fillRect(0,0,20,20);
+  //ctx.fillRect(0,0,20,20);
   img.onload = function() {
     drawImageScaled(img, ctx);
     URL.revokeObjectURL(img.src);
     var imgData = ctx.getImageData(16,16,224,224);
-    ctx.clearRect(0,0,256,256);
+    ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
     ctx.putImageData(imgData, 16, 16);
     RunModel(imgData.data, 224, 224);
   }
