@@ -13,11 +13,12 @@ const SingleFileUploader = () => {
 
   return (
     <>
-      <div>
+      <div className = "g-col-4 text-center">
         <label htmlFor="file" className="sr-only">
-          Choose a file
+          Choose a file 
         </label>
-        <input id="file" type="file" onChange={handleFileChange} />
+        &nbsp; &nbsp; &nbsp;
+        <input  id="file" type="file" onChange={handleFileChange} />
       </div>
       {/* {file && (
         <section>

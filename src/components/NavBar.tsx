@@ -1,7 +1,7 @@
 function NavBar(){
     return (<><nav className="navbar navbar-expand-lg navbar-light bg-light">
     <a className="navbar-brand" href="#">
-    <img src="src\assets\dermalyzelogo.png" width="30" height="30" className="d-inline-block align-top" alt="" />
+    <img src="src\assets\dermalyzelogo.png" width="30" height="30" className="d-inline-block align-top " alt="" />
         Dermalyze
         </a>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,8 +21,8 @@ function NavBar(){
             Dropdown
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">Action</a>
-            <a className="dropdown-item" href="#">Another action</a>
+            <a className="dropdown-item" href="#">Archives</a>
+            <a className="dropdown-item" href="#">other</a>
             <div className="dropdown-divider"></div>
             <a className="dropdown-item" href="#">Something else here</a>
           </div>

@@ -1,3 +1,30 @@
+.titleBox {
+	background: #FBFBFB;
+	max-width: fit-content;
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 1rem;
+	
+	/*animation*/
+	animation-duration: 3.0s;
+	animation-iteration-count: infinite;
+	animation-name: pulsingTitleBox;
+	animation-timing-function: ease-in-out;
+}
+@keyframes pulsingTitleBox {
+	0% {
+		transform: scale(1.0);
+	}
+	
+	50% {
+		transform: scale(1.025);
+	}
+	
+	100% {
+		transform: scale(1.0);
+	}
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

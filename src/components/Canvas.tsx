@@ -17,7 +17,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
   }, []);
 
   return (
-    <canvas id = "canvas" ref={canvasRef} height={height} width={width}/>
+    <canvas className="col-lg-6 offset-lg-3" id = "canvas" style={{border:'1px solid grey'}}ref={canvasRef} height={height} width={width}/>
   );
 }
 
@@ -26,7 +26,7 @@ const Canvas = ({ width, height }: CanvasProps) => {
     height: window.innerHeight
 };*/
 Canvas.defaultProps = {
-  width: 240,
-  height: 240
+  width: 256,
+  height: 256
 };
 export default Canvas;

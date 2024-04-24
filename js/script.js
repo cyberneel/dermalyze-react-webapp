@@ -60,6 +60,8 @@ async function runExample(test=true) {
 }
 
 export async function RunMain(test=true) {
+  var el = document.getElementById('spinner');
+  el.style.display  = 'block';
   var imgFile = document.getElementById("file").files[0];
   var img = new Image;
   const canvas = document.getElementById("canvas");
@@ -94,12 +96,14 @@ async function RunModel(data, width, height) {
   var outputData = outputMap.values().next().value.data;
 
   // Render the output result in html.
-  pred = printMatchesMain(outputData);
+  var pred = printMatchesMain(outputData);
   if(pred == 1 || pred == 3) {
     outputMap = await sessionEczemaPsoriasis.run([inputTensor]);
     outputData = outputMap.values().next().value.data;
     pred = printMatchesEczemaPsoriasis(outputData);
   }
+  var el = document.getElementById('spinner');
+  el.style.display  = 'none';
 }
 
 function drawImageScaled(img, ctx) {
