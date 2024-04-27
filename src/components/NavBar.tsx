@@ -1,5 +1,5 @@
 function NavBar(){
-    return (<><nav className="navbar navbar-expand-lg navbar-light bg-light">
+    return (<><nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <a className="navbar-brand" href="#">
     <img src="src\assets\dermalyzelogo.png" width="30" height="30" className="d-inline-block align-top " alt="" />
         Dermalyze
@@ -8,24 +8,24 @@ function NavBar(){
       <span className="navbar-toggler-icon"></span>
     </button>
   
-    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+    <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link" href="#">Home Page <span className="sr-only">(current)</span></a>
+        <li className="nav-item">
+          <a className="nav-link active" href="/">Home Page <span className="sr-only">(current)</span></a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">About Us</a>
+          <a className="nav-link active" href="/">Blogs</a>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
+          <a className="nav-link active dropdown-toggle" href="/AboutUs" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false" >
+            About Us
           </a>
-          <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a className="dropdown-item" href="#">Archives</a>
-            <a className="dropdown-item" href="#">other</a>
-            <div className="dropdown-divider"></div>
-            <a className="dropdown-item" href="#">Something else here</a>
-          </div>
+          <ul className="dropdown-menu" >
+            <li><a className="dropdown-item" href="#">Our team</a></li>
+            <li><a className="dropdown-item" href="#">Who are we</a></li>
+           
+            <li><a className="dropdown-item" href="#">Our Mission</a></li>
+          </ul>
         </li>
       </ul>
     </div>
