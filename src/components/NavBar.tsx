@@ -11,21 +11,21 @@ function NavBar(){
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-          <a className="nav-link active" href="/">Home Page <span className="sr-only">(current)</span></a>
+          <a className="nav-link active" href="/">Home Page</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active" href="/">Blogs</a>
+          <a className="nav-link active" href="#">Blogs</a>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link active dropdown-toggle" href="/AboutUs" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="false" >
+          <a className="nav-link active dropdown" href="/AboutUs" id="navbarDropdown" role="button" data-bs-toggle="dropdown"  aria-expanded="true" >
             About Us
           </a>
-          <ul className="dropdown-menu" >
+          {/* <ul className="dropdown-menu" >
             <li><a className="dropdown-item" href="#">Our team</a></li>
             <li><a className="dropdown-item" href="#">Who are we</a></li>
            
             <li><a className="dropdown-item" href="#">Our Mission</a></li>
-          </ul>
+          </ul> */}
         </li>
       </ul>
     </div>
