@@ -21,3 +21,33 @@
 .bg-dark {
     background-color: #343a40 !important;
 }
+.social {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.social a {
+	transition: ease-in-out 0.3s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	width: 32px;
+	height: 32px;
+	background: #eff2f8;
+}
+.social a i {
+	color: var(--Even-Darker-Green);
+	font-size: 16px;
+	margin: 0 2px;
+}
+.social a:hover {
+	background: var(--Bright-Green);
+}
+.social a:hover i {
+	color: #fff;
+}
+.social a+a {
+	margin-left: 8px;
+  }
